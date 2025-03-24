@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">Servify</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#booking">Book Now</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>Your Trusted Service Providers</h1>
+        <p>Hire experienced plumbers, electricians, and more with ease.</p>
+        <a href="#booking" class="cta-btn">Book a Service</a>
+    </div>
+</section>
+
+<section class="services" id="services">
+    <h2>Our Services</h2><br>
+    <div class="service-categories">
+        <div class="service-card">
+            <img src="plumber.jpg" alt="Plumber">
+            <h3>Plumbing</h3>
+            <p>Fix leaks, install pipes, and more with our certified plumbers.</p>
+        </div>
+        <div class="service-card">
+            <img src="electrician.jpg" alt="Electrician">
+            <h3>Electrical</h3>
+            <p>Get expert electricians for wiring, installations, and repairs.</p>
+        </div>
+        <div class="service-card">
+            <img src="cleaning.jpg" alt="Cleaning">
+            <h3>Cleaning</h3>
+            <p>Professional cleaning services for your home or office space.</p>
+        </div>
+        <div class="service-card">
+            <img src="Automotive.jpg" alt="Cleaning">
+            <h3>Automotive</h3>
+            <p>Profession Automotive services for your home or office space.</p>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials">
+    <h2>What Our Clients Say</h2><br>
+    <div class="testimonial-cards">
+        <div class="testimonial-card">
+            <p>"Excellent service! The plumber fixed my leak in no time."</p>
+            <h4>- John Doe</h4>
+        </div>
+        <div class="testimonial-card">
+            <p>"The electrician was on time and very professional. Highly recommend!"</p>
+            <h4>- Sarah Lee</h4>
+        </div>
+    </div>
+</section>
+
+<section class="booking" id="booking">
+    <h2>Book a Service</h2><br>
+    <form id="booking-form">
+        <label for="service">Select Service:</label>
+        <select id="service" name="service" required>
+            <option value="plumbing">Plumbing</option>
+            <option value="electrical">Electrical</option>
+            <option value="cleaning">Cleaning</option>
+            <option value="Automotive">Automotive</option>
+        </select>
+
+        <label for="date">Preferred Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="message">Additional Info:</label>
+        <textarea id="message" name="message" placeholder="Provide any additional information..." rows="4"></textarea>
+
+        <button type="submit">Book Now</button>
+    </form>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact Us</h2><br>
+    <p>If you have any questions or need more information, feel free to reach out!</p><br>
+    <form id="contact-form">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 ServiceHub. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
